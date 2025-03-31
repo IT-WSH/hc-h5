@@ -6,7 +6,7 @@ import path from 'path'
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, __dirname);
   return {
-    base: '/hc-h5',
+    base: './',
     plugins: [vue()],
     resolve: {
       alias: {
