@@ -4,6 +4,7 @@
 
 ### 📌 项目概述
 HC实验室是一个集创意与技术于一体的前端演示项目，专注于展示各种交互式组件和动画效果的实现。基于Vue 3 + TypeScript构建，融合了现代Web开发的最佳实践。
+### 访问地址 <a src="https://it-wsh.github.io/hc-h5/index.html">https://it-wsh.github.io/hc-h5/index.html</a>
 
 ```
 
