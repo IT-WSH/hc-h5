@@ -6,7 +6,7 @@ export default defineConfig(function (_a) {
     var mode = _a.mode;
     var env = loadEnv(mode, __dirname);
     return {
-        base: '/hc-h5',
+        base: './',
         plugins: [vue()],
         resolve: {
             alias: {
