@@ -252,7 +252,7 @@ export default defineComponent({
       gameBoardRef.value?.resetGame();
       isPaused.value = false;
     };
-    const gameState = (e) => {
+    const gameState = (e: any) => {
       if (e == "playing") {
         isPaused.value = false;
       } else {

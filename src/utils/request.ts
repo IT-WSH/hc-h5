@@ -14,7 +14,7 @@ function request(url: string, maxCount: number = 1): Promise<any> {
 */
 function concurRequest(urls: string[], maxNum: number = 1) {
   if (urls.length <= 0) return Promise.resolve([])
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     let nextIndex = 0; // 下一次请求的下标
     let finishCount = 0; // 完成的请求数量
     const result: any[] = [];

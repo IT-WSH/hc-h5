@@ -85,6 +85,8 @@ const ALL_SHAPES: Piece[] = [
 
 export default defineComponent({
   setup(props, { emit }) {
+    console.log(props);
+
     const gameStatus = ref<GameStatus>("ready");
     const board = ref<Board>(
       Array.from({ length: 20 }, () => Array(10).fill(0))
@@ -94,7 +96,9 @@ export default defineComponent({
     const currentPieceX = ref(0);
     const currentPieceY = ref(0);
     const score = ref(0);
-    const interval = ref<NodeJS.Timeout | null>(null);
+    const interval = ref<ReturnType<typeof setTimeout> | null | undefined>(
+      null
+    );
     const gameSpeed = ref(500);
     const flattenedBoard = ref<number[]>([]);
     const pieceBag = ref<Piece[]>([]);

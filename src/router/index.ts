@@ -89,12 +89,14 @@ const routes: RouteRecordRaw[] = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHashHistory('/app'),
   routes
 })
 
 // 路由拦截
-router.beforeEach((to, from, next) => {
+router.beforeEach((to: any, from: any, next: any) => {
+  console.log(from);
+
   const token = localStorage.getItem('token')
   // 设置标题
   document.title = (to.meta.title || 'HC') as string
